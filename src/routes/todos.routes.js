@@ -5,7 +5,7 @@ const router = express.Router();
 
 router.get('/', controller.getAllTodos);
 router.post('/', controller.createTodo);
-router.get('/:id', controller.getTodoById); // bonus
+router.get('/:id', controller.getTodoById);
 router.put('/:id', controller.updateTodo);
 router.delete('/:id', controller.deleteTodo);
 

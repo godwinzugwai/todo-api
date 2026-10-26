@@ -22,7 +22,7 @@ async function createUser(req, res, next) {
   }
 }
 
-// This is the pattern Module 5 will replicate with Prisma's `include: { todos: true }`
+// This is the pattern Module 5 replicated with Prisma's `include: { todos: true }`
 async function getUserWithTodos(req, res, next) {
   try {
     const user = await usersStore.getById(req.params.id);

@@ -1,4 +1,4 @@
-// Minimal in-memory users store. Module 5 will replace with Prisma.
+// Minimal in-memory users store. Module 5 exercise replaced with Prisma.
 
 let users = [];
 let nextId = 1;
