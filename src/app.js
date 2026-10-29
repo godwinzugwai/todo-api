@@ -20,9 +20,12 @@ app.use((req, res) => {
 });
 
 app.use((err, req, res, next) => {
-  console.error(err);
   const status = err.status || 500;
-  res.status(status).json({ error: err.message || 'Internal Server Error' });
+  if (status >= 500) console.error(err);
+
+  res.status(status).json({ error: status >= 500 ? 'Internal Server Error' : err.message });
 });
 
 module.exports = app;
+
+// fix(app): hide internal error details from 500 responses

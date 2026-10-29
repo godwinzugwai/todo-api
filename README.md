@@ -1,5 +1,10 @@
 <!-- # Saturn (node-first-push)
 
+***docs: add Postman collection for manual testing.
+the entirety of the postman folder was generated
+
+
+
 A minimal Node.js project that demonstrates loading environment variables from a `.env` file using [dotenv](https://github.com/motdotla/dotenv). It is a first push to GitHub, so it also serves as a clean starting point for a Node.js app.
 
 ## What it does
